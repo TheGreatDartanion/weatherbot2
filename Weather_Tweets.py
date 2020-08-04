@@ -63,7 +63,7 @@ def WeatherTweet():
 
     # Tweet the weather
     api.update_status(
-        "Dartbot - Weather in DC " +\
+        "[Derulobot] Weather in DC " +\
         (datetime.datetime.now().strftime("%I:%M %p") + " " +\
          str(weather_json["main"]["temp"])+"F"))
 
@@ -85,4 +85,3 @@ def WeatherTweet():
 while(True):
     WeatherTweet()
     time.sleep(60)
-
